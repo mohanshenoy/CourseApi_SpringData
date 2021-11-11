@@ -1,4 +1,4 @@
-package com.infoscilabs.model;
+package com.infoscilabs.topic.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

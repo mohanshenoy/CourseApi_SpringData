@@ -1,4 +1,4 @@
-package com.infoscilabs.controller;
+package com.infoscilabs.topic.controller;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.infoscilabs.model.Topic;
-import com.infoscilabs.service.TopicService;
+import com.infoscilabs.topic.model.Topic;
+import com.infoscilabs.topic.service.TopicService;
 
 @RestController
 public class TopicController {
