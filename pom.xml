@@ -11,6 +11,7 @@
 	<groupId>com.infoscilabs</groupId>
 	<artifactId>CourseApi_SpringData</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
 	<name>CourseApi_SpringData</name>
 	<description>Demo project for Spring Boot using Spring Data</description>
 	<properties>
@@ -35,6 +36,10 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 	</dependencies>
 
