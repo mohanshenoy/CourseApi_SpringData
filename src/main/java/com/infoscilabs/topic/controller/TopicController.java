@@ -25,9 +25,9 @@ public class TopicController {
 		return service.getAllTopics();
 	}
 	
-	@RequestMapping(path="/topics/{name}" , method = RequestMethod.GET)
-	public Topic fetchTopic(@PathVariable String name){
-		Optional<Topic> oTopic = service.fetchTopic(name);
+	@RequestMapping(path="/topics/{id}" , method = RequestMethod.GET)
+	public Topic fetchTopic(@PathVariable String id){
+		Optional<Topic> oTopic = service.fetchTopic(id);
 		Topic topic = oTopic.get();
 		return topic;
 	}
@@ -37,13 +37,13 @@ public class TopicController {
 		service.addTopic(topic);
 	}
 	
-	@RequestMapping(path="/topics/{name}" , method = RequestMethod.PUT)
-	public void updateTopic(@PathVariable String name, @RequestBody Topic topic){
-		service.updateTopic(name , topic);
+	@RequestMapping(path="/topics/{id}" , method = RequestMethod.PUT)
+	public void updateTopic(@PathVariable String id, @RequestBody Topic topic){
+		service.updateTopic(id , topic);
 	}
 
-	@RequestMapping(path="/topics/{name}" , method = RequestMethod.DELETE)
-	public void deleteTopic(@PathVariable String name){
-		service.deleteTopic(name);
+	@RequestMapping(path="/topics/{id}" , method = RequestMethod.DELETE)
+	public void deleteTopic(@PathVariable String id){
+		service.deleteTopic(id);
 	}
 }

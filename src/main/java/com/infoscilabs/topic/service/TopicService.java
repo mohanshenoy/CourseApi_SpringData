@@ -17,19 +17,21 @@ public class TopicService {
 		return (List<Topic>) topicRepository.findAll();
 	}
 
-	public Optional<Topic> fetchTopic(String name) {
-		return topicRepository.findById(name);
+	public Optional<Topic> fetchTopic(String id) {
+		return topicRepository.findById(id);
 	}
 
 	public void addTopic(Topic topic) {
 		topicRepository.save(topic);
 	}
 
-	public void updateTopic(String name, Topic topic) {
+	public void updateTopic(String id, Topic topic) {
 		topicRepository.save(topic);
 	}
 
-	public void deleteTopic(String name) {
-		topicRepository.deleteById(name);
+	public void deleteTopic(String id) {
+		topicRepository.deleteById(id);
 	}
+
+
 }
